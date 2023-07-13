@@ -1,12 +1,13 @@
 import React from 'react';
+import '../Profile.css';
 import PropTypes from 'prop-types';
 function Description({ username, tag, location, avatar }) {
   return (
     <div className="description">
       <img src={avatar} alt="User avatar" className="description__avatar" />
       <p className="description__name">{username}</p>
-      <p className="description__tag">@{tag}</p>
-      <p className="description__location">{location}</p>
+      <p className="description__info">@{tag}</p>
+      <p className="description__info">{location}</p>
     </div>
   );
 }
